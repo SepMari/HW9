@@ -3,21 +3,20 @@ package Homework9;
 public class Main {
 
     public static void main(String[] args) {
-        Book book = new Book("Jo Nesbo Publisher Ltd.", 2019);
-        Author nameAuthor = new Author("Jo Nesbo");
+        Book snowman = new Book("Snowman", 2019, "Jo Nesbo");
 
-        System.out.println("Имя автора книги - " + nameAuthor.getNameAuthor());
-        System.out.println("Год публикации - " + book.getYearPublisher());
-        System.out.println("Кто опубликовал - " + book.getNamePublisher());
+        System.out.println("Имя автора книги - " + snowman.getNameAuthor());
+        System.out.println("Год публикации - " + snowman.getYearPublisher());
+        System.out.println("Название книги - " + snowman.getNamePublisher());
 
-        book.setYearPublisher(2022);
-        System.out.println("book.getYearPublisher() = " + book.getYearPublisher());
+        snowman.setYearPublisher(2022);
+        System.out.println("Перевыпуск публикаци в " + snowman.getYearPublisher() + " году");
 
-        Book book2 = new Book("Remark Publisher Ltd.", 1956);
-        Author nameAuthor2 = new Author("Remark");
-        System.out.println("Имя автора книги - " + nameAuthor2.getNameAuthor());
-        System.out.println("Год публикации - " + book2.getYearPublisher());
-        System.out.println("Кто опубликовал - " + book2.getNamePublisher());
+        Book blackObelisk = new Book("Black Obelisk", 1956,"Remark");
+
+        System.out.println("Имя автора книги - " + blackObelisk.getNameAuthor());
+        System.out.println("Год публикации - " + blackObelisk.getYearPublisher());
+        System.out.println("Название книги - " + blackObelisk.getNamePublisher());
 
     }
 
