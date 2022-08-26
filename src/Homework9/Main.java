@@ -5,18 +5,14 @@ public class Main {
     public static void main(String[] args) {
         Book snowman = new Book("Snowman", 2019, "Jo Nesbo");
 
-        System.out.println("Имя автора книги - " + snowman.getNameAuthor());
-        System.out.println("Год публикации - " + snowman.getYearPublisher());
-        System.out.println("Название книги - " + snowman.getNamePublisher());
+        System.out.println(snowman);
 
         snowman.setYearPublisher(2022);
         System.out.println("Перевыпуск публикаци в " + snowman.getYearPublisher() + " году");
 
         Book blackObelisk = new Book("Black Obelisk", 1956,"Remark");
 
-        System.out.println("Имя автора книги - " + blackObelisk.getNameAuthor());
-        System.out.println("Год публикации - " + blackObelisk.getYearPublisher());
-        System.out.println("Название книги - " + blackObelisk.getNamePublisher());
+        System.out.println(blackObelisk);
 
     }
 
