@@ -1,9 +1,9 @@
 package Homework9;
 
 public class Book  {
-    private String namePublisher;
+    private final String namePublisher;
     private int yearPublisher;
-    private String nameAuthor;
+    private final Author nameAuthor;
 
     @Override
     public String toString() {
@@ -12,13 +12,6 @@ public class Book  {
                 ", Год публикации - " + yearPublisher +
                 ", Имя автора книги - '" + nameAuthor + '\'' +
                 '}';
-    }
-
-    public Book (String namePublisher, int yearPublisher, String nameAuthor) {
-        this.yearPublisher = yearPublisher;
-        this.namePublisher = namePublisher;
-        this.nameAuthor = nameAuthor;
-
     }
 
     public String getNamePublisher() {
@@ -30,12 +23,15 @@ public class Book  {
 
         return this.yearPublisher;
     }
-    public String getNameAuthor() {
-        return this.nameAuthor;
-    }
 
     public void setYearPublisher(int yearPublisher) {
 
         this.yearPublisher = yearPublisher;
+    }
+
+    public Book (String namePublisher, int yearPublisher, Author nameAuthor) {
+        this.yearPublisher = yearPublisher;
+        this.namePublisher = namePublisher;
+        this.nameAuthor = nameAuthor;
     }
 }

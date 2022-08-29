@@ -3,14 +3,16 @@ package Homework9;
 public class Main {
 
     public static void main(String[] args) {
-        Book snowman = new Book("Snowman", 2019, "Jo Nesbo");
+        var nesbo = new Author("Jo Nesbo");
+        Book snowman = new Book("Snowman", 2019, nesbo);
 
         System.out.println(snowman);
 
         snowman.setYearPublisher(2022);
         System.out.println("Перевыпуск публикаци в " + snowman.getYearPublisher() + " году");
 
-        Book blackObelisk = new Book("Black Obelisk", 1956,"Remark");
+        var remark = new Author("Remark");
+        Book blackObelisk = new Book("Black Obelisk", 1956, remark);
 
         System.out.println(blackObelisk);
 
