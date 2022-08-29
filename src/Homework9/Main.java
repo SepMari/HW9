@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         var nesbo = new Author("Jo Nesbo");
-        Book snowman = new Book("Snowman", 2019, nesbo);
+        Book snowman = new Book(0, "Snowman", 2019, nesbo);
 
         System.out.println(snowman);
 
@@ -12,10 +12,13 @@ public class Main {
         System.out.println("Перевыпуск публикаци в " + snowman.getYearPublisher() + " году");
 
         var remark = new Author("Remark");
-        Book blackObelisk = new Book("Black Obelisk", 1956, remark);
+        Book blackObelisk = new Book(1, "Black Obelisk", 1956, remark);
 
         System.out.println(blackObelisk);
 
+        //Вывод значений hashCode && equals
+        System.out.println(nesbo.hashCode() == remark.hashCode());
+        System.out.println(nesbo.equals(remark));
     }
 
 }
@@ -35,4 +38,7 @@ public class Main {
     Требуется создать отдельный класс для запуска приложения и объявить метод main в нем.
 
 7. В том же методе main изменить год публикации одной из книг с помощью сеттера.
+
+Задание 10й урок:
+Реализовать методы toString, equals и hashCode в классах Author и Book, которые были созданы на прошлом уроке.
  */
